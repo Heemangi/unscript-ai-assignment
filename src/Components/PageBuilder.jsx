@@ -55,7 +55,7 @@ const PageBuilder = () => {
           fontWeight
         }
       };
-      setElements([newElement]); // Replace existing elements with the new one
+      setElements([newElement]);
       setSelectedElement(newElement);
       setModalCoordinates(newPosition);
       setShowModal(true);
@@ -66,7 +66,7 @@ const PageBuilder = () => {
       setElements(updatedElements);
       setSelectedElement({ ...selectedElement, position: newPosition });
       setModalCoordinates(newPosition);
-      setInitialDrop(false); // Reset initialDrop to allow moving other elements
+      setInitialDrop(false);
     }
   };
   
@@ -132,7 +132,7 @@ const PageBuilder = () => {
 
   const handleFontSizeChange = (event) => {
     const value = parseInt(event.target.value);
-    setFontSize(isNaN(value) ? '' : value); // If the value is not a number, set it to an empty string
+    setFontSize(isNaN(value) ? '' : value); 
   };
   
   const handleFontWeightChange = (event) => {
